@@ -67,14 +67,14 @@ public class cal {
         double a, b;
         System.out.println("--------------CALCULATOR------------");
 
-        System.out.println("Enter your choice \n 1.Basic calculations \n 2.Advanced calculations \n 3.Triganometric calculations");
+        System.out.println("Which calulations you want to do  \n1.Basic calculations \n2.Advanced calculations \n3.Triganometric calculations");
         int choice = sc.nextInt();
 
 
         if (choice == 1) {
             System.out.println("Operations are :");
-            System.out.println("1.Addition \n 2.Subtraction \n 3.Multiplication \n 4.Division");
-            System.out.println(" Enter your choice ");
+            System.out.println("1.Addition \n2.Subtraction \n3.Multiplication \n4.Division");
+            System.out.println("Enter your choice ");
             int choice2 = sc.nextInt();
 
             System.out.println("Enter 2 Numbers ");
@@ -83,27 +83,27 @@ public class cal {
 
             switch (choice2) {
                 case 1:
-                     calcii.add(a, b);
+                    System.out.println(calcii.add(a, b)); 
                     break;
                 case 2:
-                    calcii.subtract(a, b);
+                   System.out.println( calcii.subtract(a, b));
                     break;
                 case 3:
-                    calcii.multiplication(a, b);
+                    System.out.println(calcii.multiplication(a, b));
                     break;
                 case 4:
-                    calcii.division(a, b);
+                    System.out.println(calcii.division(a, b));
                     break;
 
                 default:
-                    System.out.println(" You entereed wrong number ");
+                    System.out.println("You entereed wrong number ");
                     break;
             }
 
         } 
         else if (choice == 2) {
-            System.out.println(" Operations are : ");
-            System.out.println(" 1.MOdulo division \n 2.Finding a power of a number \n 3.Finding square root of a number  ");
+            System.out.println("Operations are : ");
+            System.out.println("1.MOdulo division \n2.Finding a power of a number \n3.Finding square root of a number  ");
             System.out.println("Enter your CHoice ");
             int choice2=sc.nextInt();
             switch (choice2) {
@@ -111,7 +111,7 @@ public class cal {
                      System.out.println("Enter 2 Numbers ");
                      a = sc.nextDouble();
                      b = sc.nextDouble();
-                     calcii.mod(a, b);
+                     System.out.println(calcii.mod(a, b));
                     break;
 
                 case 2:
@@ -119,49 +119,49 @@ public class cal {
                      a = sc.nextDouble();
                      System.out.println("Enter the power number ");
                      b = sc.nextDouble();
-                     calcii.power(a, b);
+                     System.out.println(calcii.power(a, b)); 
                      break;
 
                 case 3:
                     System.out.println(" Enter the numer to find sqrt");
                      a = sc.nextDouble();
-                     calcii.sqrt(a);
+                     System.out.println(calcii.sqrt(a)); 
                      break;
                 
                 default:
-                    System.out.println(" you enteredd wrong number ");
+                    System.out.println("You entered wrong number ");
                     break;
             }
 
         }
         else if ( choice ==3){
             System.out.println("The operations are ");
-            System.out.println("1.Finding sine value \n 2.Finding CoSine value \n 3. Finding Tan value \n 4.Finding Log value");
+            System.out.println("1.Finding sine value \n2.Finding CoSine value \n3.Finding Tan value \n4.Finding Log value");
             System.out.println("Enter your choice ");
             int choice3=sc.nextInt();
             switch (choice3) {
                 case 1:
                     System.out.println("Enter the degree of sine");
                      a = sc.nextDouble();
-                     calcii.sin(a);
+                     System.out.println(calcii.sin(a));
                      break;
                 
                 case 2:
                     System.out.println("Enter the degree of CoSine");
                      a = sc.nextDouble();
-                     calcii.cos(a);
+                     System.out.println(calcii.cos(a));
                     break;
 
                 case 3:
                      System.out.println("Enter the degree of Tan");
                      a = sc.nextDouble();
-                     calcii.tan(a);
+                    System.out.println( calcii.tan(a));
                     break;
 
                 case 4: 
                   System.out.println("Enter the log value ");
                      a = sc.nextDouble();
-                     calcii.log(a);
+                  System.out.println(calcii.log(a));
                     break;
             
                 default:
