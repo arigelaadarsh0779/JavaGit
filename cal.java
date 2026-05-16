@@ -65,7 +65,7 @@ public class cal {
         triganometri calcii = new triganometri();
         Scanner sc = new Scanner(System.in);
         double a, b;
-        System.out.println("--------------CALCULATOR------------");
+        System.out.println("-------CALCULATOR-------");
 
         System.out.println("Which calulations you want to do  \n1.Basic calculations \n2.Advanced calculations \n3.Triganometric calculations");
         int choice = sc.nextInt();
