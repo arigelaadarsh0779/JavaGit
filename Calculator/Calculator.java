@@ -69,7 +69,7 @@ public class Calculator {
 
         do {
             double a, b;
-            System.out.println("-------CalcULATOR-------");
+            System.out.println("-------CALULATOR-------");
 
             System.out.println(
                     "Which calulations you want to do  \n1.Basic Calculations \n2.Advanced Calculations \n3.Triganometric Calculations\n4.Exit");
