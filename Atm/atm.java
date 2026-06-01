@@ -1,0 +1,6 @@
+class
+
+public class atm {
+
+    
+}

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class calc {
+class Calc {
     public double add(double a, double b) {
         return a + b;
     }
@@ -23,7 +23,7 @@ class calc {
 
 }
 
-class advCal extends calc {
+class AdvCalc extends Calc {
 
     public double mod(double a, double b) {
         return a % b;
@@ -40,7 +40,7 @@ class advCal extends calc {
 
 }
 
-class triganometri extends advCal {
+class Triganometri extends AdvCalc {
     public double sin(double a) {
         return Math.sin(a);
     }
@@ -61,18 +61,18 @@ class triganometri extends advCal {
 
 }
 
-public class cal {
+public class Calculator {
     public static void main(String[] args) {
-        triganometri calcii = new triganometri();
+        Triganometri Calcii = new Triganometri();
         Scanner sc = new Scanner(System.in);
         int choice;
 
         do {
             double a, b;
-            System.out.println("-------CALCULATOR-------");
+            System.out.println("-------CalcULATOR-------");
 
             System.out.println(
-                    "Which calulations you want to do  \n1.Basic calculations \n2.Advanced calculations \n3.Triganometric calculations\n4.Exit");
+                    "Which calulations you want to do  \n1.Basic Calculations \n2.Advanced Calculations \n3.Triganometric Calculations\n4.Exit");
             choice = sc.nextInt();
 
             if (choice == 1) {
@@ -87,16 +87,16 @@ public class cal {
 
                 switch (choice2) {
                     case 1:
-                        System.out.println(calcii.add(a, b));
+                        System.out.println(Calcii.add(a, b));
                         break;
                     case 2:
-                        System.out.println(calcii.subtract(a, b));
+                        System.out.println(Calcii.subtract(a, b));
                         break;
                     case 3:
-                        System.out.println(calcii.multiplication(a, b));
+                        System.out.println(Calcii.multiplication(a, b));
                         break;
                     case 4:
-                        System.out.println(calcii.division(a, b));
+                        System.out.println(Calcii.division(a, b));
                         break;
 
                     default:
@@ -115,7 +115,7 @@ public class cal {
                         System.out.println("Enter 2 Numbers ");
                         a = sc.nextDouble();
                         b = sc.nextDouble();
-                        System.out.println(calcii.mod(a, b));
+                        System.out.println(Calcii.mod(a, b));
                         break;
 
                     case 2:
@@ -123,13 +123,13 @@ public class cal {
                         a = sc.nextDouble();
                         System.out.println("Enter the power number ");
                         b = sc.nextDouble();
-                        System.out.println(calcii.power(a, b));
+                        System.out.println(Calcii.power(a, b));
                         break;
 
                     case 3:
                         System.out.println(" Enter the numer to find sqrt");
                         a = sc.nextDouble();
-                        System.out.println(calcii.sqrt(a));
+                        System.out.println(Calcii.sqrt(a));
                         break;
 
                     default:
@@ -147,25 +147,25 @@ public class cal {
                     case 1:
                         System.out.println("Enter the degree of sine");
                         a = sc.nextDouble();
-                        System.out.println(calcii.sin(a));
+                        System.out.println(Calcii.sin(a));
                         break;
 
                     case 2:
                         System.out.println("Enter the degree of CoSine");
                         a = sc.nextDouble();
-                        System.out.println(calcii.cos(a));
+                        System.out.println(Calcii.cos(a));
                         break;
 
                     case 3:
                         System.out.println("Enter the degree of Tan");
                         a = sc.nextDouble();
-                        System.out.println(calcii.tan(a));
+                        System.out.println(Calcii.tan(a));
                         break;
 
                     case 4:
                         System.out.println("Enter the log value ");
                         a = sc.nextDouble();
-                        System.out.println(calcii.log(a));
+                        System.out.println(Calcii.log(a));
                         break;
 
                     default:
