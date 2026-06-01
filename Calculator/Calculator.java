@@ -100,14 +100,14 @@ public class Calculator {
                         break;
 
                     default:
-                        System.out.println("You entereed wrong number ");
+                        System.out.println("You Entered wrong number ");
                         break;
                 }
 
             } else if (choice == 2) {
                 System.out.println("Operations are : ");
                 System.out.println(
-                        "1.MOdulo division \n2.Finding a power of a number \n3.Finding square root of a number  ");
+                        "1.Modulo Division \n2.Finding a power of number \n3.Finding square root of a number  ");
                 System.out.println("Enter your CHoice ");
                 int choice2 = sc.nextInt();
                 switch (choice2) {
@@ -127,20 +127,19 @@ public class Calculator {
                         break;
 
                     case 3:
-                        System.out.println(" Enter the numer to find sqrt");
+                        System.out.println(" Enter the Number to find sqrt");
                         a = sc.nextDouble();
                         System.out.println(Calcii.sqrt(a));
                         break;
 
                     default:
-                        System.out.println("You entered wrong number ");
+                        System.out.println("You Entered wrong number ");
                         break;
                 }
 
             } else if (choice == 3) {
                 System.out.println("The operations are ");
-                System.out.println(
-                        "1.Finding sine value \n2.Finding CoSine value \n3.Finding Tan value \n4.Finding Log value");
+                System.out.println("1.Finding sine value \n2.Finding CoSine value \n3.Finding Tan value \n4.Finding Log value");
                 System.out.println("Enter your choice ");
                 int choice3 = sc.nextInt();
                 switch (choice3) {
