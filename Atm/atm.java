@@ -1,6 +1,0 @@
-class
-
-public class atm {
-
-    
-}
